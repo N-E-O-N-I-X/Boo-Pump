@@ -1,0 +1,128 @@
+body {
+    margin: 0;  
+    background-image: url("Web.png");
+    background-size: cover;
+    background-position: center;
+    cursor: none;
+    overflow: hidden;
+}
+
+canvas {
+    opacity: 0.992;
+}
+
+.pump {
+    z-index: 888;
+    position: absolute;
+    right: 36%;
+    top: 28%;
+}
+
+.pump img { 
+    opacity: 0.7;
+    width: 500px;
+    filter: grayscale(1);
+}
+
+.pump img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    filter: drop-shadow(0 0 12px rgba(110, 231, 126, 0.2));
+    cursor: url("cursor.cur"), pointer;
+    transition: 0.15s;
+}
+
+.pampkin {
+    z-index: 888;
+    position: absolute;
+    right: -80px;
+    bottom: -220px;
+}
+
+.pampkin img {
+    opacity: 0.7;
+    width: 770px;
+    filter: drop-shadow(0 0 12px rgba(192, 66, 17, 0.781));
+}
+
+.hat {
+    z-index: 1001;
+    position: absolute;
+    right: 56%;
+    top: 2%;
+    
+}    
+.hat img {
+    width: 300px;
+    transform: rotate(-13deg);
+    filter: drop-shadow(0 0 12px rgba(233, 88, 30, 0.2));
+}
+
+h1 {
+    position: absolute;
+    z-index: 1000;
+    font-family: "Rubik Wet Paint", system-ui;
+    color: rgb(228, 226, 223);
+    font-size: 120px;
+    font-weight: 500;
+    top: 3%;
+    right: 32%;
+
+}
+
+h1 span {
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.2));
+}
+
+.orange {
+    right: 31.9%;
+    top: 3.9%;
+    color: rgb(236, 104, 56);
+    z-index: 999;
+    filter: drop-shadow(0 0 12px rgba(192, 66, 17, 0.781));
+}
+
+.rubik-wet-paint-regular {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.ghost {
+    z-index: 888;
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+}
+
+.ghost img {
+    width: 400px;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.2));
+}
+
+.crow {
+    z-index: 888;
+    position: absolute;
+    left: 60px;
+    bottom: 700px;
+    border: white 10px solid;
+    height: 150px;
+    width: 150px;
+    border-radius: 500px;
+}
+
+.crow img {
+    padding-top: 18px;
+    width: 140px;
+    filter: invert(100%) brightness(100%);
+}
+
+.crow  img:hover{
+    cursor: url("cursor.cur"), pointer;
+    filter: invert(100%) brightness(100%) drop-shadow(0 0 12px rgba(255, 255, 255, 0.2));
+}
+
+.crow:hover {
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.2));
+}
